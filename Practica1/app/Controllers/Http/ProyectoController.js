@@ -53,7 +53,8 @@ class ProyectoController {
         await proyecto.delete(); //Elimina el proyecto
         return proyecto;
     }
-
+  
+   //Actualiza proyectos
     async update({auth, params, request}){
         const user = await auth.getUser();
         const {id} = params;
